@@ -185,7 +185,7 @@ def renew_check():
         i += 1
     print('- response:', body)
     if 'renew' in body:
-        body = '🎉' + 'ID:' + USER_ID + '|' + body
+        body = '🎉' + 'ID:' + tgUserID + '|' + body
         return True
 
 
