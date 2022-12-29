@@ -48,3 +48,15 @@ jobs:
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
         run: |  
           xvfb-run python3 ./main.py
+          
+          
+      - name: 'Renew 3'
+        env:
+          URL_BASE: ${{ secrets.URL_BASE_H }}
+          USERNAME: ${{ secrets.USERNAME_H_US2 }}
+          PASSWORD: ${{ secrets.PASSWORD_H_US2 }}
+          BARK_TOKEN: ${{ secrets.BARK_TOKEN }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+        run: |  
+          xvfb-run python3 ./main.py
